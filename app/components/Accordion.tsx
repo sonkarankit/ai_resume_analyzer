@@ -5,7 +5,7 @@ import { cn } from "~/lib/utils";
 interface AccordionContextType {
     activeItems: string[];
     toggleItem: (id: string) => void;
-    isItemActive: (id: string) => boolean;
+    isItemActive: (id: string) =>boolean;
 }
 
 const AccordionContext = createContext<AccordionContextType | undefined>(
